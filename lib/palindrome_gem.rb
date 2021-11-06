@@ -2,7 +2,12 @@
 
 require_relative "palindrome_gem/version"
 
-module PalindromeGem
-  class Error < StandardError; end
-  # Your code goes here...
+class Palindrome
+  def palindrome_test(text)
+    if text == text.reverse
+      puts "It's a palindrome!"
+    else
+      puts "It's not a palindrome"
+    end
+  end
 end
